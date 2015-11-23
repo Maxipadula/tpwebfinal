@@ -1,7 +1,7 @@
  <html>
  <head>
  <script type="text/javascript" src="../../js/funciones/jquery-1.11.3.min.js"></script>
-  <script type="text/javascript" src="../../js/funciones/reparacion.js"></script>
+  <script type="text/javascript" src="../../js/funciones/validarAgregarReparacion.js"></script>
 	
 	
  </head>
@@ -128,10 +128,10 @@
 			
 
 				
- 				<div><label>FECHA
+ 				<div><label>FECHA</label>
  					</br>
- 					<input type="text" name="fecha">
- 				</label>
+ 					<input type="text" name="fecha" placeholder="Formato AAAA-MM-DD" id="fecha">
+ 					<div id="mensaje1" class="errores"> Ingresa una fecha valida [AAAA-MM-DD]</div>
  				</div>
  				</br>
 
@@ -139,8 +139,7 @@
  		
 				
 							
-				<input type="submit" value="Agregar">
-				<input type="submit" value="Atras" onclick = "location='<?php echo $reparacion_datos?>'"/>
+				<input type="submit" value="Agregar" class="boton" id="boton">
  		</div>
  	</form>
 	
