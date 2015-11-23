@@ -1,0 +1,270 @@
+@import  "https://fonts.googleapis.com/css?family=Ubuntu:300";
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFF;
+    margin: 0;
+    font-family: 'Ubuntu',sans-serif;
+    padding: 0;
+}
+
+ul {
+    float: left;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 50%;
+}
+
+ul li {
+    float: left;
+    position: relative;
+    right: 50%;
+}
+
+li a {
+    padding: 30px;
+}
+
+#login {
+    text-align: center;
+}
+
+#divHeader {
+    height: 100px;
+    background-color: #00BCD4;
+    text-align: center;
+    padding-top: 25px;
+    color: #FFF;
+}
+
+#divNav {
+    text-align: left;
+    background-color: #0097A7;
+    color: #FFF;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#divHeaderLogin {
+    height: 100px;
+    background-color: #607D8B;
+    text-align: center;
+    padding-top: 45px;
+    color: #FFF;
+}
+
+#divHeader_supervisor {
+    height: 100px;
+    background-color: #4CAF50;
+    text-align: center;
+    padding-top: 25px;
+    color: #FFF;
+}
+
+#divNav_supervisor {
+    text-align: left;
+    background-color: #388E3C;
+    color: #FFF;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#divHeader_chofer {
+    height: 100px;
+    background-color: #FF9800;
+    text-align: center;
+    padding-top: 25px;
+    color: #FFF;
+}
+
+#divNav_chofer {
+    text-align: left;
+    background-color: #F57C00;
+    color: #FFF;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#divContenedor {
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+
+/* Color Hipervinculos*/
+a {
+    color: #FFF;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*   Boton    */
+.boton {
+    color: #fff;
+    background: #607D8B;
+    border: 0;
+    width: 100px;
+    height: 30px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.boton:hover {
+    background: #455A64;
+}
+
+select{
+    font-family: inherit;
+    color: #9E9E9E;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    padding: 5px;
+    width: 175px;
+    outline:0px;
+}
+select:focus,select.focus{
+    border: none;
+    border-bottom: solid 2px #0288D1;
+    padding: 5px;
+    width: 175px;
+    outline:0px;
+}
+
+/*TABLAS*/
+.divTabla {
+    padding: 1em 3em;
+    margin: 1em 3em;
+    border-spacing: 0;
+}
+
+.divTabla table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-color: #fff;
+    width: 100%;
+    height: auto;
+    border: 0;
+    padding: 0;
+}
+
+.divTabla td {
+    vertical-align: middle;
+    background-color: #fff;
+    border: 0;
+    height: 30px;
+    /*width: 100%;*/
+    text-align: center;
+    padding: 0;
+    color: #000;
+    
+}
+
+.divTabla tr:first-child td {
+    background-color: #607D8B;
+    text-align: center;
+    color: #fff;
+}
+
+table tr td.tBotonELim {
+    vertical-align: middle;
+    text-align: center;
+    width: 125px;
+    background-color: #F44336;
+}
+
+table tr td.tBotonELim:hover {
+    background-color: #D32F2F;
+    cursor: pointer;
+}
+
+table tr td.tBotonAgregar {
+    vertical-align: middle;
+    text-align: center;
+    width: 125px;
+    background-color: #5757DC;
+}
+
+table tr td.tBotonAgregar:hover {
+    background-color: #5757DC;
+    cursor: pointer;
+}
+
+table tr td.tBotonModif {
+    vertical-align: middle;
+    text-align: center;
+    width: 125px;
+    background-color: #9C27B0;
+}
+
+table tr td.tBotonModif:hover {
+    background-color: #7B1FA2;
+    cursor: pointer;
+}
+
+.tLink {
+    color: #FFF;
+}
+
+.tLink:link {
+    text-decoration: none;
+}
+
+.tLink:visited {
+    text-decoration: none;
+}
+
+/* ERRORES JS*/
+.errores {
+    text-align: center;
+    width: 200px;
+    height: 20px;
+    color: #F44336;
+    display: none;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+#bienvenido {
+    float: right;
+    margin-right: 10px;
+}
+#delog{
+    float: right;
+    margin-right: 10px;
+	margin-top:0px;
+}
+
+input[readonly] {
+    color: #9E9E9E;
+    width: 175px;
+}
+
+input[type="text"],input[type="password"] {
+    padding: 5px;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    transition: border .3s;
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    width: 175px;
+}
+
+input[type="text"]:focus,input[type="text"].focus,input[type="password"]:focus,input[type="password"].focus {
+    border: none;
+    border-bottom: solid 2px #0288D1;
+    outline:0px;
+}
