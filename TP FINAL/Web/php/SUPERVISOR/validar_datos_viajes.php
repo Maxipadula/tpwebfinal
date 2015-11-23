@@ -54,7 +54,7 @@
  		<p><a href='javascript:history.go(-1)'>VOLVER ATRÁS</a></p>"; 
  					 
 	
-	echo '<img src="qr.php?id='.$id_viaj.'" />';
+	echo '<img src="qr.php?id='.$id_viaj.'" WIDTH=198 HEIGHT=200/>';
  	?> 
  </div>	 
  </html> 
