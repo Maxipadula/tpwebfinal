@@ -4,7 +4,7 @@
 		<title>Agregar User | S.G.L</title>
 		
 		<script type="text/javascript" src="../../../../js/funciones/jquery-1.11.3.min.js"></script>
-		<script type="text/javascript" src="../../../../js/funciones/validarVC.js"></script>
+		<script type="text/javascript" src="../../../../js/funciones/validarAgregarUsuarios.js"></script>
 		
 		<LINK REL="Stylesheet" HREF="../Css/login.css" TYPE="text/css">
 	</head>
@@ -42,7 +42,7 @@
 				
  				<div><label>USUARIO</label>
  					</br>
- 					<input type="text" name="usuario" id="user" placeholder="Usuario">
+ 					<input type="text" name="usuario" id="usuario" placeholder="Usuario">
  					<div id="mensaje1" class="errores"> Ingresa un usuario</div>
  				</div>
  				</br>

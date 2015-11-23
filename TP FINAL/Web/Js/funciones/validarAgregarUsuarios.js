@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     $("#boton").click(function (){
 
-        var user = $("#user").val();
+        var user = $("#usuario").val();
         var name = $("#name").val();
         var pass = $("#pass").val();
         var fnac = $("#fnac").val();

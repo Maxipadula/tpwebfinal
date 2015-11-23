@@ -41,7 +41,7 @@ $(document).ready(function () {
                     else{
                         $("#mensaje7").fadeOut();
                         
-                        if(carga == "" || !expr1.test(carga)){
+                        if(carga == "" || !expr.test(carga)){
                             $("#mensaje8").fadeIn("slow");
                             return false;
                          }

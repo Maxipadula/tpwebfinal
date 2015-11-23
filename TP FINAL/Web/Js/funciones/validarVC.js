@@ -1,6 +1,7 @@
 var expr = /^[a-zA-Z]*$/;
 var expr1 = /^[0-9]*$/;
 var expr2 = /(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})/;
+var expr3 = /(\+|-)?([0-9]+(\.[0-9]+))/;
 
 $(document).ready(function () {
 
@@ -27,14 +28,14 @@ $(document).ready(function () {
                             else{
                             $("#mensaje2").fadeOut();
 
-                                if(latitud == "" || !expr1.test(latitud)){
+                                if(latitud == "" || !expr3.test(latitud)){
                                 $("#mensaje3").fadeIn("slow");
                                 return false;
                                  }
                                 else{
                                 $("#mensaje3").fadeOut();
 
-                                    if(longitud == "" || !expr1.test(longitud)){
+                                    if(longitud == "" || !expr3.test(longitud)){
                                     $("#mensaje4").fadeIn("slow");
                                     return false;
                                      }

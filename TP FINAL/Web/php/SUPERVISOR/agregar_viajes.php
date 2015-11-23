@@ -137,7 +137,7 @@
 				 <div><label>CARGA</label>
  				</br>
  				<input type="text" name="carga" id="carga" placeholder="Carga">
- 				<div id="mensaje8" class="errores"> Ingrese solo numeros</div>
+ 				<div id="mensaje8" class="errores"> Ingrese solo letras</div>
  				</div>
  				</br>
 				
