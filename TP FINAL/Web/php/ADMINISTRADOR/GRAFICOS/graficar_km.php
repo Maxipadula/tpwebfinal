@@ -15,7 +15,7 @@ $conexion = mysql_connect($puerto, $usuario,$password) or die("no conecta");
 			
 			$fecha=array();
 			$km=array();
-    
+		if($cant =! 0){
 			while($row = mysql_fetch_assoc($consulta_datos)) { 
 				
 		
@@ -58,4 +58,8 @@ $curva->SetWidth(30);
 
 // Display the graph
 $graph->Stroke();
+		}
+		else{
+			echo "EL TRANSPORTE NO TIENE MANTENIMIENTOS REGISTRADOS";
+		}
 ?>
