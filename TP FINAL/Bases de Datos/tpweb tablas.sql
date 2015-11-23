@@ -26,7 +26,6 @@ create table if not exists licencia
 
 );
 
-
   create table if not exists dar_permiso
     (id_permiso int ,
      codigo_rol int,
@@ -38,7 +37,6 @@ create table if not exists licencia
 	 ON DELETE CASCADE
 	 ON UPDATE CASCADE
 );
-
 
  CREATE TABLE IF NOT EXISTS usuario (
     id_usuario INT PRIMARY KEY,
@@ -186,10 +184,6 @@ create table if not exists vale_combustible
 	 ON DELETE CASCADE
 	 ON UPDATE CASCADE
 );
-
-
-
-
 
 /**********************/
 
