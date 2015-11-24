@@ -24,6 +24,39 @@
 		<?php include ("menu_chofer.php");?>
 				
 		<div id="divContenedor">
+		
+		    <div class="divTabla">
+		<?php
+			$consulta_vc = mysql_query ("SELECT VC.id_viaje viaje,VC.fecha_hora fh,L.descripcion lugar,VC.costo costo,VC.cantidad cantidad
+												FROM vale_combustible VC inner join
+												     lugar L on VC.id_lugar = L.id_lugar
+												WHERE VC.id_viaje = ".$id_viaje."")or die (mysql_error());
+												
+			$cant = mysql_num_rows($consulta_vc);
+			
+			if($cant != 0){
+			 if ($row = mysql_fetch_array($consulta_vc)){
+			 	echo "<h4> Vales de combustible registrados </h4>";
+				echo "<table border = '1'> \n";
+				echo "<tr><td>ID de viaje</td><td>Fecha y hora</td><td>Lugar</td><td>Costo</td><td>Cantidad</td></tr>\n";
+			
+				do{
+					echo "<tr><td>".$row["viaje"]."</td><td>".$row["fh"]."</td><td>".$row["lugar"]."</td><td>".$row["costo"]."</td><td>".$row["cantidad"]."</td>
+					      </tr> \n";     
+				
+				}while ($row = mysql_fetch_array($consulta_vc));
+			
+				echo "</table> \n";
+			 
+			
+			 } else {
+				echo "<h3> No se encontraron registros </h3>";
+		} 
+			}else{
+				echo "<h4> Es tu primer vale de combustible </h4></br>";
+			}
+		?>
+		</div>
 			<h3> VALE DE COMBUSTIBLE </h3>
 				
 				<form class='contacto' method="post" action="<?php echo $validar_vc?>">
