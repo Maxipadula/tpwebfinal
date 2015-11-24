@@ -20,17 +20,8 @@
 			   <h1> ADMINISTRAR PERMISOS</h1>
 		</div>
 	<nav id='divNav' >
-		
        <ul>
-           		
-
-		 
-			
-          
-		
-		  
-	
-			 <li><a href="./usuarios_datos.php">ADMINISTRAR USUARIOS</a></li>
+			<li><a href="./usuarios_datos.php">ADMINISTRAR USUARIOS</a></li>
 			 
 			<li><a href="../registrar_datos.php">SALIR</a></li>
 
@@ -39,8 +30,9 @@
 	</nav>
 	<div id="divContenedor">
 	</br>
-		<a href="./<?php echo $asignar_permiso ?>" class="boton">ASIGNAR PERMISOS</a></br>
-		</br><a href="./<?php echo $agregar_permiso ?> "class="boton">AGREGARNUEVO PERMISO</a></br>
+		<a href="./<?php echo $asignar_permiso ?>" class="boton">&nbsp;&nbsp;ASIGNAR PERMISOS&nbsp;&nbsp;</a></br>
+		</br><a href="./<?php echo $agregar_permiso ?> "class="boton">&nbsp;&nbsp;AGREGAR NUEVO PERMISO&nbsp;&nbsp;</a></br>
+	</div>
 		<?php
 		
 		include ('../../../rutas.php');
@@ -70,7 +62,7 @@
 	 echo    "<div class='divTabla'>"	;
 		
 			if ($chofer = mysql_fetch_array($consulta_permiso_chofer)){
-			echo "CHOFER </br><table border = '1'> \n";
+			echo "<div id='divContenedor'><h3>CHOFER</h3> </div><table border = '1'> \n";
 			echo "<tr><td>PERMISOS</td></tr>\n";
 			do{
 				echo "<tr><td>".$chofer["permiso"]."</td><td class='tBotonElim'><a href='".$validar_eliminacion_permiso ."?ID=".$chofer["ID"]."' class = 'tLink' >ELIMINAR</a></td></tr> \n";     
@@ -83,22 +75,20 @@
 		}
 
 		if ($admin = mysql_fetch_array($consulta_permiso_admin)){
-			echo "ADMINISTRADOR </br><table border = '1'> \n";
+			echo "<div id='divContenedor'><h3>ADMINISTRADOR</h3></div><table border = '1'> \n";
 			echo "<tr><td>PERMISOS</td></tr>\n";
 			do{
 				echo "<tr><td>".$admin["permiso"]."</td><td class='tBotonElim'><a href='".$validar_eliminacion_permiso ."?ID=".$admin["ID"]."' class = 'tLink' >ELIMINAR</a></td></tr> \n";     
 			} while ($admin = mysql_fetch_array($consulta_permiso_admin));
 			echo "</table> \n";
 			
-			echo "</br></br>";
-			
-			
+								
 		} else {
 			echo "<h3> No se encontraron registros </h3>";
 		} 
 		
 			if ($supervisor = mysql_fetch_array($consulta_permiso_supervisor)){
-			echo "SUPERVISOR </br><table border = '1'> \n";
+			echo "<div id='divContenedor'><h3>SUPERVISOR</h3></div><table border = '1'> \n";
 			echo "<tr><td>PERMISOS</td></tr>\n";
 			do{
 				echo "<tr><td>".$supervisor["permiso"]."</td><td class='tBotonElim'><a href='".$validar_eliminacion_permiso ."?ID=".$supervisor["ID"]."' class = 'tLink' >ELIMINAR</a></td></tr> \n";     
@@ -112,6 +102,6 @@
 		} 
 	?>
 
-		</div>
+
 
 </html>

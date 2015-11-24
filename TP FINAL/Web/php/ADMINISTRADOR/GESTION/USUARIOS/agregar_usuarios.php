@@ -56,7 +56,7 @@
 				
  				<div><label>CONTRASEÑA</label>
  					</br>
- 					<input type="text" name="pass" id="pass" placeholder="Contraseña">
+ 					<input type="password" name="pass" id="pass" placeholder="Contraseña">
  					<div id="mensaje3" class="errores"> Ingresa contraseña</div>
  				</div>
  				</br>

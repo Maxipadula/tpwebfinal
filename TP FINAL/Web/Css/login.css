@@ -97,9 +97,15 @@ li a {
     text-align: center;
 }
 
+#divContenedorAlarma {
+    margin-left: 200px;
+    margin-right: 100px;
+    text-align: center;
+}
+
 #alarma {
    vertical-align: middle;
-    text-align: center;
+    text-align: left;
 	display:block;
     color: #9C27B
 }
@@ -161,14 +167,14 @@ select:focus,select.focus{
 
 /*TABLAS*/
 .divTabla {
-    padding: 1em 3em;
-    margin: 5em 3em;
-    border-spacing: 3;
+/*    padding: 1em 3em;
+    margin: 5em 3em;*/
+    border-spacing: 0;
 }
 
 .divTabla table {
     border-collapse: separate;
-    border-spacing: 3;
+    border-spacing: 0;
     border-color: #fff;
     width: 100%;
     height: auto;
@@ -178,7 +184,7 @@ select:focus,select.focus{
 
 .divTabla td {
     vertical-align: middle;
-       background-color:#DBE0E3;
+    background-color:#DBE0E3;
     border: 0;
     height: 30px;
     /*width: 100%;*/

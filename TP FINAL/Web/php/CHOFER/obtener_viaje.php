@@ -36,6 +36,8 @@
 				<div><label>ID DE VIAJE</label>
 				</br>
 				<input type="text" name="id_viaje" placeholder ="ID">
+				</br></br>
+				<input type="submit" name="submit" Value="Enviar" class="boton">
 					
 				</div>
 				

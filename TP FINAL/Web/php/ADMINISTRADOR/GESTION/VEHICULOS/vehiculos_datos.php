@@ -33,7 +33,7 @@
            
 	
 		  <!--- <a href="./modificar_vehiculos.php">MODIFICAR</a>
-		   <br> --->
+		   <br> -->
 	
 		  
 		  <li><a href="../../<?php echo $registrar_datos?>">SALIR</a></li>
@@ -46,7 +46,9 @@
 	</nav>
 	<div id="divContenedor">
 	</br>
-	<a href="./<?php echo $agregar_vehiculos ?>" class="boton">AGREGAR NUEVO VEHICULO</a>
+	<a href="./<?php echo $agregar_vehiculos ?>" class="boton">&nbsp;&nbsp;AGREGAR NUEVO VEHICULO&nbsp;&nbsp;</a>
+</div>
+	</br></br>
 	    <div class="divTabla">
                 <?php
                         
@@ -74,7 +76,7 @@
                 ?>
             </div>
 
-		</div>
+
 </body>
 
 </html>

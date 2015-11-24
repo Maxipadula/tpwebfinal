@@ -34,9 +34,10 @@
 
 		<div id="divContenedor">
 		</br>
-		
-		
-		  <a  href="./<?php echo $agregar_reparacion ?>" class="boton">ASIGNAR UN VIAJE</a>
+		<a  href="./<?php echo $agregar_reparacion ?>" class="boton">&nbsp;&nbsp;ASIGNAR UN VIAJE&nbsp;&nbsp;</a>
+		</br></br>
+		</div>
+		  
 		
 	<?PHP
 
@@ -71,7 +72,7 @@
 		";
 	?>
 
-		</div>
+
 		   
 	</body>
 

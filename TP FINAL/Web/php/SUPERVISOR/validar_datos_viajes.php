@@ -60,8 +60,9 @@
 	echo '<img src="qr.php?id='.$id_viaj.'" WIDTH=198 HEIGHT=200/>';
 	
 		
- 	?> 
-	<a href="<?php echo $viajes_datos ?>" class="boton" align="center">VOLVER</a>
+ 	?>
+ </br>
+	<a href="<?php echo $viajes_datos ?>" class="boton" align="center">&nbsp;&nbsp;VOLVER&nbsp;&nbsp;</a>
  </div>	
 	</body> 
  </html> 

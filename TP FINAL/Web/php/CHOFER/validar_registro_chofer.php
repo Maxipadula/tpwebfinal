@@ -53,7 +53,7 @@
 	
 							
 		
-	echo "Registro exitoso";
+	echo "<div id='divContenedor'>Registro exitoso</div>";
 	}else	echo"EL VIAJE QUE QUIERES MODIFICAR YA TERMINO";
 	/*if($update_viaje_km_recorridos == true)
 			  header("location:./".$chofer_home."");

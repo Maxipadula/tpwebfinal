@@ -4,9 +4,9 @@
 	
 		<body>
 <?php include ("supervisor_home.php"); ?>
-<div id="divContenedor">
+</br></br>
 <div class="divTabla">
-	 	<p>SELECCIONE VIAJE A SEGUIR</p>
+
 		
 		
 			<?PHP

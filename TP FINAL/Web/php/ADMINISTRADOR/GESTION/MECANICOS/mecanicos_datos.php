@@ -26,9 +26,9 @@
             
            <li></li>
 	
-		   <!--<li><a href="./<?php echo $modificar_mecanico?>">INTERIORIZAR / EXTERIORIZAR</a></li>-->
+		   <!--<li><a href="./<?php echo $modificar_mecanico?>">INTERIORIZAR / EXTERIORIZAR</a></li>
 
-		  <li><a href="./<?php echo $eliminar_mecanico?>">ELIMINAR</a></li>
+		  <li><a href="./<?php echo $eliminar_mecanico?>">ELIMINAR</a></li>-->
 		   
 		   <li><a href="../../<?php echo $registrar_datos?>">SALIR</a></li>
 
@@ -36,7 +36,8 @@
  
 	</nav>
 	<div id="divContenedor">
-	</br><a href="./<?php echo $agregar_mecanico?>" class="boton">AGREGAR NUEVO MECANICO</a>
+	</br><a href="./<?php echo $agregar_mecanico?>" class="boton">&nbsp;&nbsp;AGREGAR NUEVO MECANICO&nbsp;&nbsp;</a></br></br></br>
+</div>
 				<div class="divTabla">
 		<?php
 		
@@ -48,7 +49,6 @@
 		 $consulta  = mysql_query ("SELECT *
 									FROM mecanico ") or die ("no q");
 		
-       echo "SELECCIONAR EL MECANICO QUE QUIERAS ELIMINAR";
 			
 		if ($row = mysql_fetch_array($consulta)){
 			echo "<table border = '1'> \n";
@@ -63,7 +63,7 @@
 
 ?></div>
 
-		</div>
+
 </body>
 
 </html>

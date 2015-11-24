@@ -70,7 +70,7 @@
 							                    values ('".$id_vc."','".$id_viaje."','".$fecha_hora."',".$id_lugar.",'".$costo."', '".$cantidad."')") or die (mysql_error());
 
 		
-		echo "<p>Los datos han sido guardados con exito.</p>" ; 
+		echo "<div id='divContenedor'><p>Los datos han sido guardados con exito.</p> </div>" ; 
 
 	}else
 		echo"EL VIAJE QUE QUIERES MODIFICAR YA TERMINO";

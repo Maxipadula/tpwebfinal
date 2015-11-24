@@ -33,14 +33,16 @@
 			</nav>
 
 		<div id="divContenedor">
-		
-			
+		</br>	
+		<a  href="./<?php echo $agregar_viaje ?>" class="boton">&nbsp;&nbsp;ASIGNAR UN VIAJE&nbsp;&nbsp;</a>
+		</div>	
  
 		</br>
 		<form class='contacto' method="get" action="<?php echo $usuario_a_modificar ?>">
 			<div id="contacto">
 		
-	  <a  href="./<?php echo $agregar_viaje ?>" class="boton">ASIGNAR UN VIAJE</a>
+	  
+			
 			<?PHP
 	
 			include ('../rutas.php');
@@ -71,13 +73,13 @@
 			} while ($row = mysql_fetch_array ($consulta_viaje_modificar));
 			echo "</table> \n";
 		} else {
-			echo "no se encontraron ningun registro";
+			echo "<div id='divContenedor'><h3>No se encontraron registros</h3></div>";
 		} ?>
 		
 		</form>
 		</div>
 		</div>
-		</div>
+
 		   
 	</body>
 

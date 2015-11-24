@@ -12,7 +12,8 @@
 										         vehiculo V on T.id_vehiculo = V.id_vehiculo inner join
 												 marca MA on MA.id_marca = V.id_marca inner join
 												 modelo MO on MO.id_modelo = V.id_modelo") or die (mysql_error());
-												 
+	echo "<div id='divContenedorAlarma'>";
+	echo "</br>";											 
 	echo"<div id='alarma'>";
 	
 	while($transportes = mysql_fetch_array($consulta_transportes)){
@@ -28,8 +29,8 @@
 		if($transportes["km"] > $alarma * $contador["cantidad"] ){
 			
 			
-			echo "<img src='../../img/alerta.jpg'  WIDTH=18 HEIGHT=20 />El transporte '".$transportes["marca"]." ".$transportes["modelo"]."' con patente  '".$transportes["patente"]."' supero los :".$alarma * $contador["cantidad"].".KM 
-			<a href='".$alarma_visto."?ID=".$transportes["id"]."&contador=".$contador["cantidad"]."' id ='tBotonAlarma' >VISTO</a></br>";
+			echo "<a id='tBotonAlarma'>&nbsp;&nbsp;!&nbsp;&nbsp;</a>El transporte '".$transportes["marca"]." ".$transportes["modelo"]."' con patente  '".$transportes["patente"]."' supero los : ".$alarma * $contador["cantidad"]." KM
+			<a href='".$alarma_visto."?ID=".$transportes["id"]."&contador=".$contador["cantidad"]."' id ='tBotonAlarma' >&nbsp;&nbsp;VISTO&nbsp;&nbsp;</a></br></br>";
 			
 															 
 		}
@@ -38,4 +39,6 @@
 				
 	}
 	echo"</div>";
+	echo"</div>";
 ?>
+<!--<img src='../../img/alerta.png'  WIDTH=25 HEIGHT=25 /> -->

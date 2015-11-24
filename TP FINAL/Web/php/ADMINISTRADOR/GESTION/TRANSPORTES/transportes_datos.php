@@ -31,9 +31,11 @@
  
 	</nav>
 	  	<div id="divContenedor">
-		<div class="divTabla">
-		<a href="./<?php echo $agregar_transportes ?>" class="boton">AGREGAR UN NUEVO TRANSPORTE </a></br></br>
-	<?php
+		</br>
+		<a href="./<?php echo $agregar_transportes ?>" class="boton">&nbsp;&nbsp;AGREGAR UN NUEVO TRANSPORTE&nbsp;&nbsp;</a></br></br>
+</div>
+	<div class="divTabla">
+		<?php
 		
 			include ('../../../rutas.php');
 	
@@ -63,7 +65,6 @@
 		} 
 
 ?>
-</div>
 </div>
 </body>
 
