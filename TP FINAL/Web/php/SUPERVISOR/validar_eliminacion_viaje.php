@@ -24,6 +24,8 @@
 	mysql_query("DELETE FROM viaje WHERE id_viaje = '$id_eliminar_viaj'")
     or die(mysql_error()); 
 	
+	header("location:./viajes_datos.php");
+	
 	?>
 	
 </html>

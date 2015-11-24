@@ -33,6 +33,8 @@
 	//supervisor
 	$supervisor_home = "supervisor_home.php";
 	$registrar_datos_sup="registrar_datos_sup.php";
+	$alarmas = "alarmas.php";
+	$alarma_visto = "alarma_visto.php";
 	   
 	   //gestion de viajes
 		$viajes_datos = "viajes_datos.php";
@@ -110,6 +112,7 @@
 			   $validar_modificacion_transportes = "validar_modificacion_transportes.php";
 			   $menu_modificacion_transporte ="menu_modificacion_transportes.php";
 			   $validar_eliminar_transporte ="validar_eliminar_transporte.php ";
+			   $modificaciones_transporte="modificaciones_transporte.php";
 			   
 			   
 			  //gestion de mecanicos

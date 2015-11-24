@@ -59,6 +59,6 @@
 		
 	}
 	
-	echo("<div id='divContenedor'>MODIFICACION EXITOSA</div>");
+	header("location:./usuarios_datos.php");
 
 ?>

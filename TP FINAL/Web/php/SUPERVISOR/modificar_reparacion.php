@@ -6,7 +6,6 @@
 	
  </head>
  <body>
-    <?php include ("reparacion_datos.php"); ?>
 	
 	<?PHP
 		include ('../rutas.php');

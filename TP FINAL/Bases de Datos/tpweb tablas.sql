@@ -225,25 +225,17 @@ create table if not exists reparacion
 );
 
 create table if not exists alarmas
-	(id_alarmas int primary key,
-     id_repuesto int,
-     constraint id_repuesto_fk foreign key (id_repuesto) references repuesto (id_repuesto)
-     ON DELETE CASCADE
-	 ON UPDATE CASCADE,    
+	(id_alarmas int primary key,   
 	 kilometros double
      );
    
 create table if not exists alar_transp
 	(
      id_transporte int,
-     id_alarmas int,  
-	 contador int,
-	 constraint id_pk primary key (id_transporte, id_alarmas),
+     contador int,
      constraint id_transpo_fk foreign key (id_transporte) references transporte (id_transporte)
      ON DELETE CASCADE
-	 ON UPDATE CASCADE,
-	 constraint id_ala_fk foreign key (id_alarmas) references alarmas (id_alarmas)
-     ON DELETE CASCADE
 	 ON UPDATE CASCADE
+
      );  
 

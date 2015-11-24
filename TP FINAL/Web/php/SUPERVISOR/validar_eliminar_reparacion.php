@@ -10,5 +10,5 @@
 	
 	$eliminar_reparacion=mysql_query("DELETE FROM reparacion WHERE codigo_reparacion = '".$id_reparacion."'")or die (mysql_error());
 	
-	echo "ELIMINACION EXITOSA";
+
 ?>

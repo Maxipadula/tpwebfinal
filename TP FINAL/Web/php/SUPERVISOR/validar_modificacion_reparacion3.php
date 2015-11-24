@@ -45,6 +45,6 @@
 	}
 
 
-	echo("MODIFICACION EXITOSA");
+
 	
 ?>

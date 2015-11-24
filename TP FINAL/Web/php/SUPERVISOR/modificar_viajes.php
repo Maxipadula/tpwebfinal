@@ -44,7 +44,7 @@
 				echo "<tr><td>".$row["id_vi"]."</td><td>".$row["nomb"]."</td><td>".$row["descrip"]
 				."</td><td>".$row["id_trans"]."</td><td>".$row["ori"]."</td><td>".$row["dest"]
 				."</td><td>".$row["cli"]."</td><td>".$row["fecha"]."</td><td>".$row["carg"]
-				."</td><td class='tBotonModif'><a href='".$menu_modificacion_viajes."?ID=".$row["id_vi"]."' class = 'tlink'>  Modificar </a></td></tr> \n";     
+				."</td><td class='tBotonModif'><a href='".$menu_modificacion_viajes."?ID=".$row["id_vi"]."' class = 'tlink'>  Modificar </a></td><td class='tBotonElim'><a href='".$validar_eliminacion_viaje."?ID=".$row["id_viaje"]."' class = 'tlink'>Eliminar</a></td></tr> \n";     
 			} while ($row = mysql_fetch_array ($consulta_viaje_modificar));
 			echo "</table> \n";
 		} else {

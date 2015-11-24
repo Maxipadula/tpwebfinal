@@ -46,7 +46,7 @@
  											 
 
  							 
-	echo "CARGA COMPLETA"
+	header("location:usuarios_datos.php");
  	?> 
 	
  	 

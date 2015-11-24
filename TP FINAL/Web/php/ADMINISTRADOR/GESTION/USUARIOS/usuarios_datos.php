@@ -36,11 +36,8 @@
            		
 
 		  
-           <li><a href="./<?php echo  $agregar_usuario ?>">AGREGAR NUEVO USUARIO</a></li>
+       
 		  
-		   <li><a href="./<?php echo  $modificar_usuario?>">MODIFICAR USUARIO EXISTENTE</a></li>
-		 
-		  <li> <a href="./<?php echo $eliminar_usuario?>">ELIMINAR UN USUARIO </a></li>
 		
 		   <li> <a href="./<?php echo $permisos_datos?>">ADMINISTRAR PERMISOS </a></li>
 		   
@@ -48,9 +45,39 @@
 		
 
        </ul>
+	
  
 	</nav>
+	</div>
+	  	<div id="divContenedor">
+		<div class="divTabla">
+         <a href="./<?php echo  $agregar_usuario ?>" class="boton">AGREGAR NUEVO USUARIO</a>
+		 </br>
+		   <?php
+		
 
+			
+			$consulta  = mysql_query ("SELECT U.id_usuario ID,U.nombre nombre,U.usuario usuario,U.pass contra,U.fecha_nacimiento fecha,U.num_doc numdoc,R.descripcion rol
+									   FROM usuario U join
+											rol R on R.codigo_rol = U.codigo_rol") or die (mysql_error());
+
+			if ($row = mysql_fetch_array($consulta)){
+			echo "<table border = '1'> \n";
+			echo "<tr><td>NOMBRE Y APELLIDO</td><td>USUARIO</td><td>CONTRASEÑA</td><td>FECHA DE NACIMIENTO</td><td>NUMERO DE DOCUMENTO</td><td>ROL</td></tr>     \n";
+			do{
+				echo "<tr><td>".$row["nombre"]."</td><td>".$row["usuario"]."</td><td>".$row["contra"]."</td><td>".$row["fecha"]."</td><td>".$row["numdoc"]."</td><td>".$row["rol"]."</td><td class='tBotonModif'><a href='".$menu_modificacion_usuario."?ID=".$row["ID"]."' class = 'tlink'>Modificar</a></td>
+				      <a href='".$validar_eliminacion_usuario."?ID=".$row["ID"]."' class = 'tlink'>Eliminar</a></td>
+					  <td class='tBotonElim'><a href='".$validar_eliminacion_usuario."?ID=".$row["ID"]."' class = 'tlink'>Eliminar</a></td></tr> \n";     
+			} while ($row = mysql_fetch_array ($consulta));
+			echo "</table> \n";
+			
+			
+		} else {
+			echo "no se encontraron ningun registro";
+		} 
+					
+		?>
+</div>
 </body>
 
 </html>

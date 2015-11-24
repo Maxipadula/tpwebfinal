@@ -97,6 +97,21 @@ li a {
     text-align: center;
 }
 
+#alarma {
+   vertical-align: middle;
+    text-align: center;
+	display:block;
+    color: #9C27B
+}
+#tBotonAlarma{
+	background-color:red;
+	color:white;
+}
+
+#asignar{
+	background-color:red;
+	color:white;
+}
 /* Color Hipervinculos*/
 a {
     color: #FFF;
@@ -111,7 +126,7 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /*   Boton    */
@@ -147,13 +162,13 @@ select:focus,select.focus{
 /*TABLAS*/
 .divTabla {
     padding: 1em 3em;
-    margin: 1em 3em;
-    border-spacing: 0;
+    margin: 5em 3em;
+    border-spacing: 3;
 }
 
 .divTabla table {
     border-collapse: separate;
-    border-spacing: 0;
+    border-spacing: 3;
     border-color: #fff;
     width: 100%;
     height: auto;
@@ -163,7 +178,7 @@ select:focus,select.focus{
 
 .divTabla td {
     vertical-align: middle;
-    background-color: #fff;
+       background-color:#DBE0E3;
     border: 0;
     height: 30px;
     /*width: 100%;*/

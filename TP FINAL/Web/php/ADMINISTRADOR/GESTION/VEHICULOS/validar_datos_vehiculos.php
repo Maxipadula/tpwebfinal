@@ -70,7 +70,7 @@
  									values ('".$id_vehi."','".$id_modelo."','".$id_mar."','".$cap_carga."')  
  										    ;")or die (mysql_error()); 
  											 
-	echo "<div id='divContenedor'>CARGA EXITOSA</div>";
+	header("location:./vehiculos_datos.php");
  							 
   
  	?> 

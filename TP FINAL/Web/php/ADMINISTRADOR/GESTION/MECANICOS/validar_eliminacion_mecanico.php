@@ -15,7 +15,7 @@
 	
 	mysql_query("DELETE FROM mecanico WHERE id_mecanico = '".$id_mecanico_elim."'")
     or die(mysql_error()); 
-	echo "<div id='divContenedor'> Eliminacion Exitosa </div>";
+		header("location:./mecanicos_datos.php");
 	?>
 
 	

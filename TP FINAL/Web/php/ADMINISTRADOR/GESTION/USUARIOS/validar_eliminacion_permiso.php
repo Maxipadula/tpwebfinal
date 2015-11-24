@@ -14,5 +14,5 @@
 	mysql_query("DELETE FROM dar_permiso WHERE id_dp = '".$dp."'")
     or die(mysql_error()); 
 	
-	echo("<div id='divContenedor'>ELIMINACION EXITOSA</div>");
+		header("location:./permisos_datos.php");
 ?>

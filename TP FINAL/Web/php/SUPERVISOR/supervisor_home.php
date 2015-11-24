@@ -41,13 +41,13 @@
 		
 				<ul>
        			    <li><a href="./<?php echo $registrar_datos_sup ?>"> REGISTROS</a></li>
-				    <li><a href="./<?php echo $ver_mapa ?>"> MAPA</a></li>
+				    <li><a href="./<?php echo $ver_mapa ?>"> MAPAS</a></li>
             		<li><a href="../<?php echo $login?>"> SALIR</a></li>
 				</ul>
 			</nav>
 
 		<div id="divContenedor">
-
+		<?php include($alarmas); ?>
 
 		</div>
 

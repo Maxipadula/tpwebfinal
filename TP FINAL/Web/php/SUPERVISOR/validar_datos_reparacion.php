@@ -70,7 +70,7 @@
 	
   
   
-	echo "REGISTRO REPARACION EXITOSO";
+	
   
  	?> 
  	 

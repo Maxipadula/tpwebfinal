@@ -1,5 +1,8 @@
 <html> 
-<?php include ("viajes_datos.php");?>
+	<head>
+		<LINK REL="Stylesheet" HREF="../../Css/login.css" TYPE="text/css">
+	</head>
+	<body>
 <div id="divContenedor">
  	<?PHP 
  	
@@ -49,12 +52,16 @@
 	
 	$data ="";
  											 
-	echo "<p>ENTREGAR QR AL CHOFER ASIGNADO.</p>    
+	echo "<p>ENTREGAR QR AL CHOFER ASIGNADO.</p>" ;   
   
- 		<p><a href='javascript:history.go(-1)'>VOLVER ATRÁS</a></p>"; 
+
  					 
 	
 	echo '<img src="qr.php?id='.$id_viaj.'" WIDTH=198 HEIGHT=200/>';
+	
+		
  	?> 
- </div>	 
+	<a href="<?php echo $viajes_datos ?>" class="boton" align="center">VOLVER</a>
+ </div>	
+	</body> 
  </html> 

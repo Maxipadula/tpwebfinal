@@ -18,8 +18,8 @@
     or die(mysql_error()); 
 
     //Mensaje y boton para continuar//
-	echo("<h3>ELIMINACION EXITOSA</h3>");
+	header("location:./transportes_datos.php");
 	?>
-	<button onclick="location.href='./<?php echo $eliminar_transportes  ?>'" class="boton">Continuar</button>
+	
 	</div> 
 </html>

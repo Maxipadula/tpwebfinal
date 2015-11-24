@@ -38,5 +38,7 @@
 	
 	$insertar_permiso = mysql_query ("insert into dar_permiso(id_permiso,codigo_rol,id_dp)
 											values('".$id_permiso."','".$cod_rol."','".$id_dp."');") or die (mysql_error());
+											
+	header("location:./permisos_datos.php");
 ?>
 

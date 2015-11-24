@@ -18,7 +18,7 @@
 	
 	mysql_query("DELETE FROM vehiculo WHERE id_vehiculo = '".$id_vehiculo_elim."'")
     or die(mysql_error()); 
-	echo("<div id='divContenedor'>ELIMINACION EXITOSA</div>");
+	header("location:./vehiculos_datos.php");
 	?>
 	</div>
 </html>

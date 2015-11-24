@@ -46,7 +46,7 @@ include ('../../../rutas.php');
  	//echo $id_mar; PARA VER QUE TRAEN 
        */
  											 
-	echo "<p>Los datos han sido guardados con exito.</p>   " 
+	header("location:./mecanicos_datos.php");
   
  	
  							 
